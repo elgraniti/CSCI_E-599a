@@ -1,16 +1,21 @@
-How To Train a YOLO Model with Ultralytics
-How to set up and train a YOLO model using the Ultralytics framework in Python.
+# How to Train a YOLO Model with Ultralytics
 
-The data.yaml
-The data.yaml file defines the dataset paths and classes and it needs to be in the same path as the notebook. 
-yaml
+This guide explains how to set up and train a YOLO model using the [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) framework in Python.
 
+---
+
+## Dataset Configuration (`data.yaml`)
+
+The `data.yaml` file defines the dataset structure and class labels. It must be located in the same directory as your training script or notebook.
+
+```yaml
 train: images/train
 val: images/val
 test: images/test
 
 nc: 2  # number of classes
 names: ["class_0", "class_1"]
+
 
 
 
